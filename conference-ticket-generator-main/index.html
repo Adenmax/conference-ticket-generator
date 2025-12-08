@@ -1,57 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Conference ticket generator</title>
+    <!-- <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    /> -->
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Conference ticket generator</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
 
-  <!-- Form starts -->
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <img
+          src="/conference-ticket-generator/conference-ticket-generator-main/public/assets/images/logo-full.svg"
+          alt="conf logo"
+        </div>
+      </header>
 
-  Your Journey to Coding Conf 2025 Starts Here!
+      <main>
+        <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+        <p class="subtitle">
+          Secure your spot at next year's biggest coding conference.
+        </p>
 
-  Secure your spot at next year's biggest coding conference.
+        <form class="registration-form">
+          <div class="form-group">
+            <label for="avatar">Upload Avatar</label>
+            <div class="upload-area">
+              <div class="upload-icon">
+                <img
+                  src="/conference-ticket-generator/conference-ticket-generator-main/public/assets/images/icon-upload.svg"
+                  alt=""
+                />
+              </div>
+              <p>Drag and drop or click to upload</p>
+            </div>
+            <p class="upload-hint">
+              Upload your photo (JPG or PNG, max size: 500KB).
+            </p>
+          </div>
 
-  Upload Avatar
-  Drag and drop or click to upload
-  Upload your photo (JPG or PNG, max size: 500KB).
+          <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required />
+          </div>
 
-  Full Name
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@email.com"
+              required
+            />
+          </div>
 
-  Email Address
-  example@email.com
+          <div class="form-group">
+            <label for="github">GitHub Username</label>
+            <input
+              type="text"
+              id="github"
+              name="github"
+              placeholder="@yourusername"
+              required
+            />
+          </div>
 
-  GitHub Username
-  @yourusername
+          <button type="submit" class="submit-btn">Generate My Ticket</button>
+        </form>
+      </main>
+    </div>
 
-  Generate My Ticket
+    <!-- Generated tickets starts -->
 
-  <!-- Form ends -->
+    Congrats,
+    <!-- Full Name -->! Your ticket is ready. We've emailed your ticket to
+    <!-- Email Address -->
+    and will send updates in the run up to the event. Coding Conf Jan 31, 2025 /
+    Austin, TX
 
-  <!-- Generated tickets starts -->
+    <!-- Generated tickets ends -->
 
-  Congrats, <!-- Full Name -->! Your ticket is ready.
-
-  We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.
-
-  Coding Conf
-  Jan 31, 2025 / Austin, TX
-
-  <!-- Generated tickets ends -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
 </html>
