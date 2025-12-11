@@ -6,7 +6,7 @@
 body {
   font-family: "[Inconsolata](https://fonts.google.com/specimen/Inconsolata)",
     monospace;
-  background-image: url(/conference-ticket-generator/conference-ticket-generator-main/public/assets/images/background-desktop.png);
+  background-image: url(/conference-ticket-generator-main/public/assets/images/background-desktop.png);
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
